@@ -8,19 +8,19 @@
     tools:context=".AppOverview">
 
     <com.androidplot.xy.XYPlot
-        style="@style/APDefacto.Dark"
         android:id="@+id/plot"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
+        style="@style/APDefacto.Dark"
+        android:layout_width="386dp"
+        android:layout_height="559dp"
+        app:domainTitle="Day of the Week"
+        app:layout_constraintBottom_toTopOf="@id/fButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:title="Work Flow"
-        app:rangeTitle="Hours"
-        app:domainTitle="Day of the Week"
+        app:lineLabelRotationBottom="-45"
         app:lineLabels="left|bottom"
-        app:lineLabelRotationBottom="-45" />
+        app:rangeTitle="Hours"
+        app:title="Work Flow" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fButton"
@@ -32,7 +32,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.82"
+        app:layout_constraintVertical_bias="0.909"
         app:srcCompat="@android:drawable/ic_menu_my_calendar" />
 
     <TextView
@@ -47,6 +47,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/fButton"
-        app:layout_constraintVertical_bias="0.106" />
+        app:layout_constraintVertical_bias="0.294" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
