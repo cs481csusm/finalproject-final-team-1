@@ -27,9 +27,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         findViewById<Button>(R.id.mainMenuLoginButton).setOnClickListener {
-            if(login("johndoe@email.com", "123")) { //Testing login
-                startActivity(Intent(this, AppOverview::class.java))
-            }
+            startActivity(Intent(this, AppOverview::class.java))
+            //if(login("johndoe@email.com", "123")) { //Testing login
+
+            //}
         }
         findViewById<Button>(R.id.notification).setOnClickListener {
            // permissionRequest()
@@ -46,6 +47,7 @@ class MainActivity : AppCompatActivity() {
      *
      * @Note Please lowercase all email entry before passed as a parameter
      */
+    /*
     private fun login(email: String, password: String) : Boolean{
         var returnValue = false
         val database = FirebaseFirestore.getInstance()
@@ -62,6 +64,7 @@ class MainActivity : AppCompatActivity() {
         Toast.makeText(this, "Login Failed", Toast.LENGTH_LONG).show()
         return returnValue
     }
+     */
 
     private fun permissionRequest(){
       /*  var permissionList = mutableListOf<String>()
