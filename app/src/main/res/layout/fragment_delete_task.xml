@@ -6,23 +6,23 @@
     android:layout_height="match_parent"
     tools:context=".AppOverview">
 
-    <TextView
-        android:id="@+id/DeleteTaskFragment"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Delete Task Fragment"
-        android:textColor="#43a047"
-        android:textSize="40sp"
-        android:textStyle="italic|bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/addTaskFragment2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete Task "
+            android:textColor="#673AB7"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/taskDelete"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.582" />
 
         <Button
             android:id="@+id/deleteButton"
@@ -30,18 +30,19 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="38dp"
             android:layout_marginBottom="196dp"
-            android:text="DELETE"
+            android:text="DELETE TASK"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/dayDelete" />
+            app:layout_constraintTop_toBottomOf="@+id/dayDelete"
+            app:layout_constraintVertical_bias="0.6" />
 
         <EditText
             android:id="@+id/taskDelete"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="144dp"
+            android:layout_marginTop="216dp"
             android:ems="10"
             android:hint="Enter Task Name"
             android:inputType="textPersonName"
@@ -54,11 +55,12 @@
             android:id="@+id/weekDelete"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="44dp"
+            android:layout_marginTop="24dp"
             android:ems="10"
             android:hint="Week (1-3)"
             android:inputType="textPersonName"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/taskDelete" />
 
@@ -66,13 +68,16 @@
             android:id="@+id/dayDelete"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="24dp"
             android:ems="10"
             android:hint="Day (1-7)"
             android:inputType="textPersonName"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/weekDelete" />
+            app:layout_constraintTop_toBottomOf="@+id/weekDelete"
+            app:layout_constraintVertical_bias="0.0" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

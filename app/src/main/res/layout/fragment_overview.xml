@@ -10,8 +10,8 @@
     <com.androidplot.xy.XYPlot
         android:id="@+id/plot"
         style="@style/APDefacto.Dark"
-        android:layout_width="386dp"
-        android:layout_height="559dp"
+        android:layout_width="390dp"
+        android:layout_height="533dp"
         app:domainTitle="Day of the Week"
         app:layout_constraintBottom_toTopOf="@id/fButton"
         app:layout_constraintEnd_toEndOf="parent"
